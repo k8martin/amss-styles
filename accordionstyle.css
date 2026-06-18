@@ -9,7 +9,7 @@ p {
 }
 /* 1. This styles all links by default */
 a {
-    color: #007377;             /* Sets the link color (MSS Teal) */
+    color: #007377; !important; /* Sets the link color (MSS Teal) */
     text-decoration: underline; /* Ensures the underline is visible */
     font-weight: 600;           /* Optional: Makes the text slightly bolder so it stands out */
     transition: color 0.2s ease;/* Makes the color transition smooth */
@@ -23,7 +23,7 @@ a:hover {
 button {
     background-color: #007377; /* Sets the button background to MSS teal */
     color: white;              /* Sets the text color */
-    border: none;              /* Removes the default ugly border */
+    border: #7c878e;              /* adding border so its easier to read */
     padding: 10px 20px;        /* Adds some space around the text */
     cursor: pointer;           /* Makes the mouse turn into a hand icon */
     transition: background-color 0.3s ease;
