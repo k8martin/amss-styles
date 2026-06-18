@@ -1,56 +1,68 @@
-body {
+/* --- GLOBAL BODY ELEMENTS RESCOPED --- */
+/* This ensures standard site text/backgrounds outside the accordion aren't messed up */
+.faq-page {
   background-color: white;
 }
-h1 {
+
+.faq-page h2, 
+.faq-page h1 {
   color: #545454;
 }
-p {
+
+.faq-page p {
   color: black;
 }
-/* 1. This styles all links by default */
-a {
-    color: #007377 !important; /* Sets the link color (MSS Teal) */
-    text-decoration: underline; /* Ensures the underline is visible */
-    font-weight: 600;           /* Optional: Makes the text slightly bolder so it stands out */
-    transition: color 0.2s ease;/* Makes the color transition smooth */
+
+/* --- HYPERLINKS (Now safely locked inside the faq-page wrapper) --- */
+.faq-page a,
+.faq-page .w3-container a, 
+.faq-page .w3-container p a {
+    color: #007377 !important;  
+    text-decoration: underline !important; 
+    font-weight: 600;           
+    transition: color 0.2s ease;
 }
 
-/* 2. This changes the link color when a user hovers over it */
-a:hover {
-    color: #0C2340;             /* Shifts to Navy on hover */
-    text-decoration: underline; /* Keeps the underline while hovering */
+.faq-page a:hover,
+.faq-page .w3-container a:hover, 
+.faq-page .w3-container p a:hover {
+    color: #0C2340 !important;  
+    text-decoration: underline !important; 
 }
-button {
-    background-color: #007377; /* Sets the button background to MSS teal */
-    color: white;              /* Sets the text color */
-    border: 1 px solid #7c878e;      /* adding border so its easier to read */
-    padding: 10px 20px;        /* Adds some space around the text */
-    cursor: pointer;           /* Makes the mouse turn into a hand icon */
+
+/* --- STANDARD BUTTONS (Rescoped) --- */
+.faq-page button {
+    background-color: #007377; 
+    color: white;              
+    border: 1px solid #7c878e; 
+    padding: 10px 20px;        
+    cursor: pointer;           
     transition: background-color 0.3s ease;
 }
-button:hover {
-    background-color: #0C2340;  /* Shifts to a darker blue */
-    color: #f1f2f6;             /* Slightly changes text color if you want */
+
+.faq-page button:hover {
+    background-color: #0C2340;  
+    color: #f1f2f6;             
 }
-/* 1. The normal closed button */
-.accordion-btn {
-    background-color: #007377; /* teal when closed */
-    color: white;
+
+/* --- ACCORDION SPECIFIC BUTTONS --- */
+/* These use specific class names, but keeping them scoped is extra safe */
+.faq-page .accordion-btn {
+    background-color: #007377 !important; 
+    color: white !important;
     padding: 15px;
     width: 100%;
-    border: #7c878e;
+    border: 1px solid #7c878e !important; 
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-/* 2. When the user hovers over it */
-.accordion-btn:hover {
-    background-color: #0C2340; /* Navy on hover */
+.faq-page .accordion-btn:hover {
+    background-color: #0C2340 !important; 
 }
 
-/* 3. When the accordion is OPEN */
-.accordion-btn.active {
-    background-color: #CF7F00; /* orange when open */
-    color: white;           
+.faq-page .accordion-btn.active {
+    background-color: #CF7F00 !important; 
+    color: white !important;            
 }
