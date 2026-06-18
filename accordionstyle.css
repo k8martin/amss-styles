@@ -7,6 +7,19 @@ h1 {
 p {
   color: black;
 }
+/* 1. This styles all links by default */
+a {
+    color: #007377;             /* Sets the link color (MSS Teal) */
+    text-decoration: underline; /* Ensures the underline is visible */
+    font-weight: 600;           /* Optional: Makes the text slightly bolder so it stands out */
+    transition: color 0.2s ease;/* Makes the color transition smooth */
+}
+
+/* 2. This changes the link color when a user hovers over it */
+a:hover {
+    color: #0C2340;             /* Shifts to Navy on hover */
+    text-decoration: underline; /* Keeps the underline while hovering */
+}
 button {
     background-color: #007377; /* Sets the button background to MSS teal */
     color: white;              /* Sets the text color */
