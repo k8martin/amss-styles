@@ -9,7 +9,7 @@ p {
 }
 /* 1. This styles all links by default */
 a {
-    color: #007377; !important; /* Sets the link color (MSS Teal) */
+    color: #007377 !important; /* Sets the link color (MSS Teal) */
     text-decoration: underline; /* Ensures the underline is visible */
     font-weight: 600;           /* Optional: Makes the text slightly bolder so it stands out */
     transition: color 0.2s ease;/* Makes the color transition smooth */
