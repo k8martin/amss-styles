@@ -25,7 +25,7 @@ button:hover {
     color: white;
     padding: 15px;
     width: 100%;
-    border: none;
+    border: #7c878e;
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
