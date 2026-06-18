@@ -1,0 +1,43 @@
+body {
+  background-color: white;
+}
+h1 {
+  color: 545454;
+}
+p {
+  color: black;
+}
+button {
+    background-color: #007377; /* Sets the button background to MSS teal */
+    color: white;              /* Sets the text color */
+    border: none;              /* Removes the default ugly border */
+    padding: 10px 20px;        /* Adds some space around the text */
+    cursor: pointer;           /* Makes the mouse turn into a hand icon */
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0C2340;  /* Shifts to a darker blue */
+    color: #f1f2f6;             /* Slightly changes text color if you want */
+}
+/* 1. The normal closed button */
+.accordion-btn {
+    background-color: #007377; /* teal when closed */
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 2. When the user hovers over it */
+.accordion-btn:hover {
+    background-color: #0C2340; /* Navy on hover */
+}
+
+/* 3. When the accordion is OPEN */
+.accordion-btn.active {
+    background-color: #CF7F00; /* orange when open */
+    color: white;           
+}
