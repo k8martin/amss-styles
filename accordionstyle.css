@@ -23,7 +23,7 @@ a:hover {
 button {
     background-color: #007377; /* Sets the button background to MSS teal */
     color: white;              /* Sets the text color */
-    border: #7c878e;              /* adding border so its easier to read */
+    border: 1 px solid #7c878e;      /* adding border so its easier to read */
     padding: 10px 20px;        /* Adds some space around the text */
     cursor: pointer;           /* Makes the mouse turn into a hand icon */
     transition: background-color 0.3s ease;
